@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <form class="formBox">
+        <table style="font-size: 1rem; font-family: sans-serif;">
+            <thead>
+                <h1 align="center">Student Registration Form Using Table In HTML</h1>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <pre><label for="firstName">First Name   :</label></pre>
+                    </td>
+                    <td>
+                        <input type="text" name="firstName" placeholder="Enter first name" id="firstName" required>
+                        <span>(Max 50 Characters Allowed)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="lastName">Last Name   :</label></pre>
+                    </td>
+                    <td>
+                        <input type="text" name="lastName" placeholder="Enter Last name" id="lastName" required>
+                        <span>(Maxn50 Characters Allowed)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="emailId">Email Id    :</label></pre>
+                    </td>
+                    <td>
+                        <input type="text" name="emailId" id="emailId" placeholder="Enter your email id" required
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="mobileNo">Mobile Number    :</label></pre>
+                    </td>
+                    <td>
+                        <input type="tel" name="mobileNo" id="mobileNo" placeholder="Enter your mobile no"
+                            required><span>(10 digits allowed)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="gender">Gender    :</label></pre>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="dob">Date Of Birth(DOB)    :</label></pre>
+                    </td>
+                    <td>
+                        <input type="number" name="day" id="day" placeholder="Day" />
+                        <input type="number" name="month" id="month" placeholder="Month" />
+                        <input type="number" name="year" id="year" placeholder="Year" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="address">Address   :</label></pre>
+                    </td>
+                    <td>
+                        <textarea id="address" name="address" cols="50" rows="10" required placeholder="Enter Address"
+                            style="resize: none;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="city">City   :</label></pre>
+                    </td>
+                    <td>
+                        <input type="text" name="city" id="city"><span>(Max 50 Characters Allowed)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="pin">Pin Code   :</label></pre>
+                    </td>
+                    <td>
+                        <input type="number" name="pin" id="pin"><span>(Max 6 Characters Allowed)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="country">Country   :</label></pre>
+                    </td>
+                    <td>
+                        <input type="text" name="country" id="country" placeholder="Enter your country"><span>(Max
+                            50 Characters Allowed)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="states">States in India   :</label></pre>
+                    </td>
+                    <td>
+                        <select id="states" name="states" style="text-align: center;">
+                            <option value="" selected>-----Choose your state-----</option>
+                            <option value="Andhra">Andhra Pradesh</option>
+                            <option value="Arunachal">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal">Himachal Pradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="TamilNadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="UttarPradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="state">State(If you are not Indian)   :</label></pre>
+                    </td>
+                    <td>
+                        <input type="text" name="state" id="state" placeholder="Enter your state"><span>(Max
+                            50Characters Allowed)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="hobbies">Hobbies    :</label></pre>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobbies" id="draw">
+                        <label for="draw">Drawing</label>
+                        <input type="checkbox" name="hobbies" id="sing">
+                        <label for="sing">Singing</label>
+                        <input type="checkbox" name="hobbies" id="dance">
+                        <label for="dance">Dancing</label>
+                        <input type="checkbox" name="hobbies" id="sket">
+                        <label for="sket">Sketching</label>
+                        <input type="checkbox" name="hobbies" id="otherHobby">
+                        <label for="otherHobby">Other</label>
+                        <input type="text" name="otherHobbyText" id="otherHobbyText" placeholder="Ex- Teaching"
+                            style="max-width: 160px;"><span>(Max 50 Characters Allowed)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="qualification">Qualification    :</label></pre>
+                    </td>
+                    <td>
+                        <input type="radio" name="qualification" id="hs">
+                        <label for="hs">High School(10th)</label>
+                        <input type="radio" name="qualification" id="h_s">
+                        <label for="h_s">Higher Secondary(12th)</label>
+                        <input type="radio" name="qualification" id="graduad">
+                        <label for="graduad">Graduation(Bachelors)</label>
+                        <input type="radio" name="qualification" id="post_graduad">
+                        <label for="post_graduad">Post Graduation(Masters)</label>
+                        <input type="radio" name="qualification" id="phd">
+                        <label for="phd">Phd</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre><label for="course">Course Applied for    :</label></pre>
+                    </td>
+                    <td>
+                        <input type="radio" name="course" id="bca">
+                        <label for="bca">BCA(Bachelors of Computer Applications)</label>
+                        <input type="radio" name="course" id="bcom">
+                        <label for="bcom">B.Com(Bachelors of Commerce)</label>
+                        <input type="radio" name="course" id="bsc">
+                        <label for="bsc">B.SC(Bachelors of Science)</label>
+                        <input type="radio" name="course" id="ba">
+                        <label for="ba">B.A(Bachelors of Arts)</label>
+                        <input type="radio" name="course" id="btech">
+                        <label for="btech">B.Tech(Bachelors of Technology)</label>
+                        <input type="radio" name="course" id="mca">
+                        <label for="mca">MCA(Masters of Computer Applications)</label>
+                        <input type="radio" name="course" id="mcom">
+                        <label for="mcom">M.Com(Masters of Commerce)</label>
+                        <input type="radio" name="course" id="msc">
+                        <label for="msc">M.SC(Masters of Science)</label>
+                        <input type="radio" name="course" id="ma">
+                        <label for="ma">M.A(Masters of Arts)</label>
+                        <input type="radio" name="course" id="mtech">
+                        <label for="mtech">M.Tech(Masters of Technology)</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="btn">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
